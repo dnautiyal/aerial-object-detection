@@ -1,5 +1,7 @@
 # Aerial-Detection-MLOps
 
+![AerialDetectionArchitecture Image](AerialDetectionArchitecture.png)
+
 ## A. Preparing VisDrone dataset for fine-tuning YOLOv7 Object Detection model
 <details>
     <summary> Step-1: Setup an EC2 box for Training </summary>
