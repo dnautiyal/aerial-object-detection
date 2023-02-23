@@ -1,5 +1,5 @@
 # Aerial-Detection-MLOps
-
+System Architecture
 ![AerialDetectionArchitecture Image](AerialDetectionArchitecture.png)
 
 ## A. Preparing VisDrone dataset for fine-tuning YOLOv7 Object Detection model
