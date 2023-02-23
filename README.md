@@ -2,7 +2,7 @@
 System Architecture
 ![AerialDetectionArchitecture Image](AerialDetectionArchitecture.png)
 
-## A. Preparing VisDrone dataset for fine-tuning YOLOv7 Object Detection model
+## A. YOLOv7 Object Detection model finetuned on VisDrone dataset 
 <details>
     <summary> Step-1: Setup an EC2 box for Training </summary>
 
