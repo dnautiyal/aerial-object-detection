@@ -1,4 +1,4 @@
-# Aerial-Detection-MLOps
+# Aerial Object Detection
 We plan to use AI for object detection for drone video data by creating a deep learning model that is trained to recognize objects in video frames captured by drones. This model will be able to quickly and accurately identify objects in video frames and provide useful insights about the environment that the drone is flying in. The model will be built by finetuning YOLOv7 on VisDrone datasets and will be optimized for real-time applications. We plan to market this product to businesses and individuals interested in using drones for commercial applications. Generally speaking, the drone object detection business market is expected to grow significantly in coming years as the use of drones for commercial applications increases. According to a report by MarketsandMarkets, the global drone analytics market is expected to be worth $2.2 billion by 2022.
 
 
