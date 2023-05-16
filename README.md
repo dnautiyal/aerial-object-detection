@@ -39,7 +39,7 @@ Deep Learning AMI GPU PyTorch 1.12.1 (Amazon Linux 2) 20221005
 - cd /home/ec2-user/aerial-detection-mlops
 - mkdir -r VisDrone/VisDrone2019-VID-test-dev
 - python3 ./src/yolo_data_utils/convert_visdrone_DET_data_to_yolov7.py --output_image_size "(960, 544)"
-- ? is this supposed to be here?  aws s3 cp s3://aerial-detection-mlops4/data/visdrone/yolov7-data/DET/VisDrone2019-DET-YOLOv7.zip VisDrone2019-DET-YOLOv7.zip 
+- aws s3 cp s3://aerial-detection-mlops4/data/visdrone/yolov7-data/DET/VisDrone2019-DET-YOLOv7.zip VisDrone2019-DET-YOLOv7.zip 
 - You can cleanup the VisDrone directory by deleting all the zip files containing the raw data.
 
 ## Step-2.2: Convert VisDrone VID data
@@ -55,7 +55,7 @@ Deep Learning AMI GPU PyTorch 1.12.1 (Amazon Linux 2) 20221005
 - mkdir -r VisDrone2019-VID-val/sequences
 - cd ..
 - python3 ./src/yolo_data_utils/convert_visdrone_VID_data_to_yolov7.py --output_image_size "(960, 544)"
-- ? is this supposed to be here? aws s3 cp VisDrone2019-VID-YOLOv7.zip s3://aerial-detection-mlops4/data/visdrone/yolov7-data/Video/VisDrone2019-DET-YOLOv7.zip
+- aws s3 cp VisDrone2019-VID-YOLOv7.zip s3://aerial-detection-mlops4/data/visdrone/yolov7-data/Video/VisDrone2019-DET-YOLOv7.zip
 - You can cleanup the VisDrone directory by deleting all the zip files containing the raw data.
 </details>
 
@@ -66,11 +66,11 @@ Deep Learning AMI GPU PyTorch 1.12.1 (Amazon Linux 2) 20221005
 - git clone https://github.com/ultralytics/yolov5.git
 - pip3 install -r yolov5/requirements.txt 
 - cd VisDrone
-- ? is this supposed to be here? aws s3 cp s3://aerial-detection-mlops4/data/visdrone/yolov7-data/DET/VisDrone2019-DET-YOLOv7.zip VisDrone2019-DET-YOLOv7.zip
-- ? is this supposed to be here? unzip -d . VisDrone2019-DET-YOLOv7.zip
-- ? is this supposed to be here? aws s3 cp s3://aerial-detection-mlops4/data/visdrone/yolov7-data/Video/VisDrone2019-VID-YOLOv7.zip VisDrone2019-VID-YOLOv7.zip
-- ? is this supposed to be here? unzip -d . VisDrone2019-VID-YOLOv7.zip
-- ? is this supposed to be here? cd ..
+- aws s3 cp s3://aerial-detection-mlops4/data/visdrone/yolov7-data/DET/VisDrone2019-DET-YOLOv7.zip VisDrone2019-DET-YOLOv7.zip
+- unzip -d . VisDrone2019-DET-YOLOv7.zip
+- aws s3 cp s3://aerial-detection-mlops4/data/visdrone/yolov7-data/Video/VisDrone2019-VID-YOLOv7.zip VisDrone2019-VID-YOLOv7.zip
+- unzip -d . VisDrone2019-VID-YOLOv7.zip
+- cd ..
 - use vim on ./src/train/train_yolo7.sh, and make sure you are running the right line. Are you on one GPU? Then don't run the distributed one.
 	- in case you messed up above, you might need to remove the cached data, ala 
 ```
