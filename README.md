@@ -23,7 +23,7 @@ Deep Learning AMI GPU PyTorch 1.12.1 (Amazon Linux 2) 20221005
 
 ## Step-2.1: Convert VisDrone DET data
 
-- git clone https://github.com/schwenkd/aerial-detection-mlops.git
+- git clone https://github.com/dnautiyal/aerial-detection-mlops.git
 - cd aerial-detection-mlops
 - pip3 install -r yolov7/requirements.txt
 - mkdir VisDrone
@@ -99,7 +99,7 @@ Deep Learning AMI GPU PyTorch 1.12.1 (Amazon Linux 2) 20221005
     <summary> Step-4.1: Create YOLOv7 object-detection mp4 Video from VisDrone-VID-Sequence files </summary>
 
 - go to aerial-detection-mlops directoru
-- git pull https://github.com/schwenkd/aerial-detection-mlops.git
+- git pull https://github.com/dnautiyal/aerial-detection-mlops.git
 - create directories: "inferencing/video/input/" and "inferencing/video/output/"
 - go to "aerial-detection-mlops/inferencing/video/input/" folder
 - aws s3 cp  s3://aerial-detection-mlops4/data/visdrone/raw-data/Video/VisDrone2019-VID-test-challenge.zip VisDrone2019-VID-test-challenge.zip
@@ -145,7 +145,7 @@ Deep Learning AMI GPU PyTorch 1.12.1 (Amazon Linux 2) 20221005
     <summary> Convert PyTorch Model to TensorRT Format </summary>
 
 - conda activate pytorch
-- git clone https://github.com/schwenkd/aerial-detection-mlops.git
+- git clone https://github.com/dnautiyal/aerial-detection-mlops.git
 - cd aerial-detection-mlops
 - cd yolov7
 - aws s3 cp s3://aerial-detection-mlops4/model/Visdrone/Yolov7/20221026/exp11/weights/best.pt ae-yolov7-best.pt
