@@ -60,7 +60,7 @@ Deep Learning AMI GPU PyTorch 1.12.1 (Amazon Linux 2) 20221005
 </details>
 
 <details>
-    <summary> Step-3: Training YOLOv7 </summary>
+    <summary> Step-3: Finetuning YOLOv7 for Visdrone Dataset</summary>
 
 - cd aerial-detection-mlops
 - git clone https://github.com/ultralytics/yolov5.git
